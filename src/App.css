@@ -1,0 +1,15 @@
+body{
+  /* padding: 0px;
+  margin: 0px; */
+}
+
+.app{
+  background: url('./../src/assets/images/wp2003009.jpg') no-repeat center center fixed;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+   background-size: cover;
+   width: 100vw;
+   height:100vh;
+   overflow: hidden;
+}

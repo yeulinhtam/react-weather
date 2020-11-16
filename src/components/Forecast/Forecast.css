@@ -1,0 +1,46 @@
+.forecast_wrapper{
+    position: absolute;
+    top: 65%;
+    width: 95%;
+    height: 220px;
+    left: 2%;
+    overflow: auto;
+    margin: 10px;
+    white-space: nowrap;
+}
+
+.forecast_item{
+    background-color: rgba(255, 255, 255, 0.562);
+    width: 9%;
+    margin: 7px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.forecast_item > .forecast_date{
+    margin: 0px;
+    color: rgba(255, 255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.forecast_item > .forecast_time{
+    color: rgba(255, 255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.forecast_item > .temperature{
+    color: rgba(255, 255, 255, 255);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.forecast_item .forecast_image{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}

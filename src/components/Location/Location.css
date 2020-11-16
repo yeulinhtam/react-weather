@@ -1,0 +1,17 @@
+.location_wrapper{
+    position: absolute;
+    top: 25%;
+    left: 2%;
+}
+
+.location_wrapper > .location{
+    color: white;
+    font-size: 48px;
+    margin: 0px;
+}
+
+.location_wrapper > .date_time{
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+}

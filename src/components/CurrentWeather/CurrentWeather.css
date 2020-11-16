@@ -1,0 +1,25 @@
+.current_weather{
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: #ffffff;
+    width: 50%;
+    
+}
+
+.temperature_wrapper {
+    margin-left: 30px;
+}
+.temperature_wrapper > h4{
+    margin: 0px;
+    font-weight: 400;
+}
+
+.temperature_wrapper > .small_label{
+    font-size: 28px;
+    display: block;
+    font-weight: 400;
+}
