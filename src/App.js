@@ -22,12 +22,10 @@ class App extends React.Component {
 
   async componentDidMount() {
 
-    let cityName = await fetch('http://ipinfo.io?token=96337b6d73ef84');
-    let result = await cityName.json();
-
+    const city = 'ho chi minh';
     const APIkey = APP_SECERT.API_KEY;
-    const weather = `https://api.openweathermap.org/data/2.5/weather?q=${result.region}&APPID=${APIkey}&units=metric`;
-    const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${result.region}&APPID=${APIkey}&units=metric`;
+    const weather = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${APIkey}&units=metric`;
+    const forecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&APPID=${APIkey}&units=metric`;
 
     const response = await fetch(weather);
     const data = await response.json();
