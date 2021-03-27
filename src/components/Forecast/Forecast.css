@@ -1,11 +1,14 @@
+.forecast_title{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 10px;
+}
+
 .forecast_wrapper{
-    position: absolute;
-    top: 65%;
-    width: 95%;
     height: 220px;
-    left: 2%;
-    overflow: auto;
-    margin: 10px;
+    overflow: scroll hidden;
+    margin: 10px 0 0 0;
     white-space: nowrap;
 }
 
@@ -16,6 +19,7 @@
     border-radius: 15px;
     text-align: center;
     display: inline-block;
+    opacity: 0.8;
     padding: 10px 0px;
 }
 
@@ -43,4 +47,121 @@
     width: 50px;
     height: 50px;
     margin: 0 auto;
+}
+
+
+@media screen and (max-width: 576px) {   
+    .forecast_item{
+        background-color: rgba(255, 255, 255, 0.562);
+        width: 20%;
+        margin: 7px;
+        border-radius: 15px;
+        text-align: center;
+        display: inline-block;
+        padding: 10px 0px;
+    }
+
+    .forecast_item > .forecast_date .forecast_time{
+        font-size: 16px;
+    }
+    
+    .forecast_item > .temperature{
+        font-size: 22px;
+    }
+} 
+
+
+@media screen and (min-width: 577px) {   
+    .forecast_title{
+        color: white;
+        font-size: 32px;
+        font-weight: 600;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+   }
+
+   .forecast_wrapper{
+        height: 220px;
+        overflow: scroll hidden;
+        margin: 50px 10px 100px 10px;
+        padding: 0 10px;
+        white-space: nowrap;
+    }
+
+    .forecast_item{
+        background-color: rgba(255, 255, 255, 0.562);
+        width: 18%;
+        margin: 7px;
+        border-radius: 15px;
+        text-align: center;
+        display: inline-block;
+        padding: 10px 0px;
+    }
+ } 
+
+ @media screen and (min-width: 767px) {   
+    .forecast_item{
+        width: 12%;
+    } 
+    .forecast_title{
+      font-size: 34px;
+    }
+    .forecast_item > .forecast_date .forecast_time{    
+        font-size: 22px;
+    }
+    
+    .forecast_item > .temperature{
+        font-size: 32px;
+    }
+}
+
+
+
+@media screen and (min-width: 993px) {   
+    .forecast_item{
+        width: 11%;
+    } 
+    .forecast_title{
+        font-size: 36px;
+      }
+      .forecast_item > .forecast_date .forecast_time{    
+          font-size: 24px;
+      }
+      
+      .forecast_item > .temperature{
+          font-size: 34px;
+      }
+}
+
+@media screen and (min-width: 1201px) {   
+    .forecast_item{
+        width: 10%;
+    } 
+    .forecast_title{
+        font-size: 38px;
+      }
+      .forecast_item > .forecast_date .forecast_time{    
+          font-size: 26px;
+      }
+      
+      .forecast_item > .temperature{
+          font-size: 36px;
+      }
+}
+
+@media screen and (min-width: 1401px) {  
+    .forecast_item{
+        width: 9%;
+    } 
+
+    .forecast_title{
+        font-size: 40px;
+      }
+      .forecast_item > .forecast_date .forecast_time{    
+          font-size: 28px;
+      }
+      
+      .forecast_item > .temperature{
+          font-size: 38px;
+      }
 }

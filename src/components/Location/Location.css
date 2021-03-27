@@ -1,7 +1,11 @@
 .location_wrapper{
-    position: absolute;
-    top: 25%;
-    left: 2%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto; 
+    height: auto;
+    padding: 30px 10px;
 }
 
 .location_wrapper > .location{
@@ -15,3 +19,85 @@
     font-size: 26px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 576px) {   
+    .location_wrapper > .location{
+        color: rgb(255, 255, 255);
+        display: block;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: left;
+        padding: 5px 0px;
+    }
+
+    .location_wrapper > .date_time{
+        color: rgb(255, 255, 255);
+        display: block;
+        font-weight: 400;
+        font-size: 15px;
+        text-align: left;
+        padding: 5px 0px;
+    }
+} 
+
+@media screen and (min-width: 577px) {   
+    .location_wrapper > .location{
+        color: rgb(255, 255, 255);
+        display: block;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: left;
+        padding: 5px 0px;
+    }
+
+    .location_wrapper > .date_time{
+        color: rgb(255, 255, 255);
+        display: block;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: left;
+        padding: 5px 0px;
+    }
+} 
+
+@media screen and (min-width: 767px) {   
+    .location_wrapper > .location{
+        font-size: 34px;
+    }
+
+    .location_wrapper > .date_time{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 993px) {   
+    .location_wrapper > .location{
+        font-size: 36px;
+    }
+
+    .location_wrapper > .date_time{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1201px) {   
+    .location_wrapper > .location{
+        font-size: 38px;
+    }
+
+    .location_wrapper > .date_time{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1401px) {   
+    .location_wrapper > .location{
+        font-size: 40px;
+    }
+
+    .location_wrapper > .date_time{
+        font-size: 24px;
+    }
+}
+
+

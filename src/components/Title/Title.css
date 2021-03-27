@@ -2,12 +2,10 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 5%;
-    left: 0; 
-    right: 0; 
     margin-left: auto; 
     margin-right: auto; 
+    height: auto;
+    padding: 30px;
 }
 
 .app_name .title{
@@ -20,8 +18,26 @@
     height: auto;
     position: relative;
     padding: 20px 0px;
-    font-size: 40px;
+    font-size: 38px;
     top: 20%;
     text-align: center;
     transition: all 0.5s ease 0s;
 }
+
+@media screen and (max-width: 576px) {   
+    .app_name .title{
+        display: block;
+        margin: 0px;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        opacity: 1;
+        height: auto;
+        position: relative;
+        padding: 10px 0px;
+        font-size: 20px;
+        top: 10%;
+        text-align: center;
+        transition: all 0.5s ease 0s;
+    }
+} 

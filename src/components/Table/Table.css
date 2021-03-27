@@ -1,14 +1,10 @@
 .table_weather{
-    width: 50%;
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
-    top: 30%;
-    right: 2%;
-    padding: 10px 0px;
-    margin: 10px 0px;
+    padding: 10px;
+    opacity: 1;
     border-radius: 15px;
-    background-color:  rgba(255, 255, 255, 0.521);
+    background-color:  rgba(255, 255, 255, 0.2);
 }
 
 .table_weather_item{
@@ -17,7 +13,7 @@
 
 .table_weather_item > .info{
     text-align: center;
-    color: rgba(39, 37, 37, 0.637);
+    color:rgb(255, 255, 255);
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 5px;
@@ -26,8 +22,83 @@
 .table_weather_item > .info_label{
     display: block;
     text-align: center;
-    color: rgba(39, 37, 37, 0.637);
+    color:rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {   
+    .table_weather{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 10px;
+    }
+
+    .table_weather_item > .info{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .table_weather_item > .info_label{
+        font-size: 14px;
+        font-weight: 400;
+    }
+} 
+
+@media screen and (min-width: 577px) {   
+    .table_weather{
+       width: 50%;
+    }
+
+    .table_weather_item > .info{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .table_weather_item > .info_label{
+        font-size: 16px;
+        font-weight: 400;
+    }
+} 
+
+
+@media screen and (min-width: 767px) {   
+    .table_weather_item > .info{
+        font-size: 20px;
+    }
+    
+    .table_weather_item > .info_label{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 993px) {   
+    .table_weather_item > .info{
+        font-size: 22px;
+    }
+    
+    .table_weather_item > .info_label{
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width: 1201px) {   
+    .table_weather_item > .info{
+        font-size: 24px;
+    }
+    
+    .table_weather_item > .info_label{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1401px) {   
+    .table_weather_item > .info{
+        font-size: 26px;
+    }
+    
+    .table_weather_item > .info_label{
+        font-size: 21px;
+    }
 }

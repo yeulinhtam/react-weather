@@ -2,19 +2,18 @@
     width: 100%;
     justify-content: center;
     display: flex;
-    align-items: center;
-    
+    align-items: center;  
 }
+
 .notfound{
     width: 720px;
     padding: 20px;
     display: flex;
-    position: absolute;
-    top: 30%;
+    margin-top: 50px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    animation: 0.5s 1.4s forwards;
+    animation: -0.5s ease 1.4s 1 normal forwards running dhgPis;
+    align-items: center;
 }
 
 .notfound_icon{
@@ -28,7 +27,47 @@
 }
 
 .notfound_text{
-    color: #ffffff;
+    color:rgb(255, 255, 255);
     font-size: 17px;
     margin: 10px;
+}
+
+@media screen and (max-width: 576px) {   
+    .notfound{
+        width: 90%;
+    }
+} 
+
+@media screen and (min-width: 767px) {   
+    .notfound{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 993px) {   
+    .notfound{
+        width: 70%;
+    }
+    .notfound_text{
+        color:rgb(255, 255, 255);
+        font-size: 28px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1201px) {   
+    .notfound{
+        width: 70%;
+    }
+    .notfound_text{
+        color:rgb(255, 255, 255);
+        font-size: 30px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1401px) {   
+    .notfound{
+        width: 70%;
+    }
 }

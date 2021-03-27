@@ -15,24 +15,24 @@ import './CurrentWeather.css';
 
 class CurrentWeather extends React.Component{
     render(){
-        const { description, temp, main } = this.props.weather;
+        const { temp, main } = this.props.weather;
         
         let weatherIcon = null;
 
         if (main === 'Thunderstorm') {
-          weatherIcon = <FontAwesomeIcon icon={faBolt} />;
+          weatherIcon = <FontAwesomeIcon icon={faBolt} className="weather-icon"/>;
         } else if (main === 'Drizzle') {
-          weatherIcon = <FontAwesomeIcon icon={faCloudRain} />;
+          weatherIcon = <FontAwesomeIcon icon={faCloudRain} className="weather-icon"/>;
         } else if (main === 'Rain') {
-          weatherIcon = <FontAwesomeIcon icon={faCloudShowersHeavy} />;
+          weatherIcon = <FontAwesomeIcon icon={faCloudShowersHeavy} className="weather-icon"/>;
         } else if (main === 'Snow') {
-          weatherIcon = <FontAwesomeIcon icon={faSnowflake} />;
+          weatherIcon = <FontAwesomeIcon icon={faSnowflake} className="weather-icon"/>;
         } else if (main === 'Clear') {
-          weatherIcon = <FontAwesomeIcon icon={faSun} />;
+          weatherIcon = <FontAwesomeIcon icon={faSun} className="weather-icon"/>;
         } else if (main === 'Clouds') {
-          weatherIcon = <FontAwesomeIcon icon={faCloud} />;
+          weatherIcon = <FontAwesomeIcon icon={faCloud} className="weather-icon"/>;
         } else {
-          weatherIcon = <FontAwesomeIcon icon={faSmog} />;
+          weatherIcon = <FontAwesomeIcon icon={faSmog} className="weather-icon"/>;
         }
 
         return(
